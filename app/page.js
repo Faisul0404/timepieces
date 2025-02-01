@@ -46,7 +46,7 @@ export default function Home() {
         </p>
         <div className="mt-4">
           <a
-            href="https://wa.me/94XXXXXXXXX"
+            href="https://wa.me/message/POWXHJ2T7IGGB1"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 text-white py-2 px-4 rounded-lg text-lg"
