@@ -20,28 +20,31 @@ export default function Home() {
         </video>
 
         {/* Black Overlay */}
-  <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
       {/* Header */}
       <header className="p-5 flex flex-col items-center justify-center text-[60px] text-white font-serif">
-      {/* <div className="flex-1 text-center">Timepieces.lk</div> */}
-      <Image 
-          src="/src/TimePiecesLogo2.png"
-          alt="Timepieces Logo"
-          width={350}  // Adjust width
-          height={350} // Adjust height
-        />
-      <div className="">Timepieces.lk</div>
-       
+        <div className="relative w-[70%] h-[300px]">
+          <Image
+            src="/src/TimePiecesLogo2.png"
+            alt="Timepieces Logo"
+            layout="fill"
+            objectFit="contain" // Adjusts image without stretching
+          />
+        </div>
+
+        <div className="text-[60px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[90px] mt-10">
+          Timepieces.lk
+        </div>
       </header>
 
       {/* Main Content */}
       <section className="flex-grow flex flex-col items-center justify-center text-center relative">
-
         {/* Under Construction Text */}
-        <h1 className="text-4xl md:text-6xl font-bold">Under Construction</h1>
-        <p className="mt-4 text-lg md:text-xl">
+        <h1 className="text-[60px] sm:text-[60px] md:text-[60px] lg:text-[60px] xl:text-[90px] mb-[-30px] font-bold">Under Construction</h1>
+        {/* <h1 className="text-4xl md:text-6xl font-bold">Under Construction</h1> */}
+        <p className="text-lg md:text-2xl">
           Stay tuned as we bring you the finest luxury timepieces in Sri Lanka.
         </p>
         <div className="mt-4">
@@ -57,11 +60,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
+
       <footer className="p-6 text-center bg-black bg-opacity-70">
-        <div className="flex justify-between items-center max-w-4xl mx-auto">
-        <p>📍 Location: Wellampitiya, Sri Lanka</p>
-        <p>📧 Email: info.timepieces.lk@gmail.com</p>
-        <p>📞 Contact: +94-712424025</p>
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row md:justify-between items-center text-white">
+          <p className="mb-2 md:mb-0">📍 Location: Wellampitiya, Sri Lanka</p>
+          <p className="mb-2 md:mb-0">📧 Email: info.timepieces.lk@gmail.com</p>
+          <p>📞 Contact: +94-712424025</p>
         </div>
         <p className="mt-4 text-sm text-gray-400">
           © {new Date().getFullYear()} Timepieces.lk | All Rights Reserved.
