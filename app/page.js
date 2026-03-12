@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TimePiecesLogo1 from "../public/src/TimePiecesLogo1.png";
 import Index from "./index";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -60,17 +61,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-
-      <footer className="p-6 text-center bg-black bg-opacity-70">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row md:justify-between items-center text-white">
-          <p className="mb-2 md:mb-0">📍 Location: Wellampitiya, Sri Lanka</p>
-          <p className="mb-2 md:mb-0">📧 Email: info.timepieces.lk@gmail.com</p>
-          <p>📞 Contact: +94-712424025</p>
-        </div>
-        <p className="mt-4 text-sm text-gray-400">
-          © {new Date().getFullYear()} Timepieces.lk | All Rights Reserved.
-        </p>
-      </footer>
+      <Footer />
     </main>
   );
 }
